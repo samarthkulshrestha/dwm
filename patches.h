@@ -26,7 +26,7 @@
  * Patch: https://gist.github.com/danbyl/54f7c1d57fc6507242a95b71c3d8fdea
  * dwmblocks: https://github.com/torrinfail/dwmblocks
  */
-#define BAR_DWMBLOCKS_PATCH 1
+#define BAR_DWMBLOCKS_PATCH 0
 
 /* This patch shows the titles of all visible windows in the status bar
  * (as opposed to showing only the selected one).
@@ -70,15 +70,15 @@
  * https://gitlab.com/udiboy1209-suckless/dwm/-/commit/071f5063e8ac4280666828179f92788d893eea40#4b1a539194be7467cefbda22f675a3b7c19ceca7
  * https://dwm.suckless.org/patches/statuscolors/
  */
-#define BAR_POWERLINE_STATUS_PATCH 1
+#define BAR_POWERLINE_STATUS_PATCH 0
 
 /* Adds powerline arrows for the tags.
  * https://gitlab.com/udiboy1209-suckless/dwm/-/commit/071f5063e8ac4280666828179f92788d893eea40#4b1a539194be7467cefbda22f675a3b7c19ceca7
  */
-#define BAR_POWERLINE_TAGS_PATCH 1
+#define BAR_POWERLINE_TAGS_PATCH 0
 
 /* Alters the tags powerline to use forward slash instead of arrows */
-#define BAR_POWERLINE_TAGS_SLASH_PATCH 1
+#define BAR_POWERLINE_TAGS_SLASH_PATCH 0
 
 /* This patch turns the titlebar area into a mfact-respecting tabbar showing each client's title.
  * https://dwm.suckless.org/patches/bartabgroups/
@@ -91,7 +91,7 @@
 #define BAR_TAGGRID_PATCH 0
 
 /* Show status in bar */
-#define BAR_STATUS_PATCH 0
+#define BAR_STATUS_PATCH 1
 
 /* This patch adds a clickable button to the left hand side of the statusbar.
  * https://dwm.suckless.org/patches/statusbutton/
@@ -109,7 +109,7 @@
  * This patch is incompatible with the extrabar patch.
  * https://dwm.suckless.org/patches/status2d/
  */
-#define BAR_STATUS2D_PATCH 0
+#define BAR_STATUS2D_PATCH 1
 
 /* Supplementary patch should you want to disable alpha for the status2d section */
 #define BAR_STATUS2D_NO_ALPHA_PATCH 0
@@ -128,7 +128,7 @@
 #define BAR_SYSTRAY_PATCH 1
 
 /* Show tag symbols in bar */
-#define BAR_TAGS_PATCH 0
+#define BAR_TAGS_PATCH 1
 
 /* Show window title in bar */
 #define BAR_WINTITLE_PATCH 1
@@ -202,7 +202,7 @@
  *
  * https://dwm.suckless.org/patches/anybar/
  */
-#define BAR_ANYBAR_PATCH 0
+#define BAR_ANYBAR_PATCH 1
 
 /* This patch adds a border around the status bar(s) just like the border of client windows.
  * https://codemadness.org/paste/dwm-border-bar.patch
@@ -263,7 +263,7 @@
 /* Allows the bar height to be explicitly set rather than being derived from font.
  * https://dwm.suckless.org/patches/bar_height/
  */
-#define BAR_HEIGHT_PATCH 0
+#define BAR_HEIGHT_PATCH 1
 
 /* This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.
  * https://dwm.suckless.org/patches/hide_vacant_tags/
@@ -314,7 +314,7 @@
  * This patch is incompatible with and takes precedence over the status2d patch.
  * https://dwm.suckless.org/patches/statuscolors/
  */
-#define BAR_STATUSCOLORS_PATCH 1
+#define BAR_STATUSCOLORS_PATCH 0
 
 /* This patch adds configuration options for horizontal and vertical padding in the status bar.
  * https://dwm.suckless.org/patches/statuspadding/
@@ -406,7 +406,7 @@
  * adding wintype as a client rule filter, hence this no longer works out of the box. This
  * patch restores previous behaviour with the center patch.
  */
-#define CENTER_TRANSIENT_WINDOWS_PATCH 0
+#define CENTER_TRANSIENT_WINDOWS_PATCH 1
 
 /* As above, except that the transient window is centered within the position of the parent
  * window, rather than at the center of the screen. This takes precedence over the above patch.
@@ -559,7 +559,7 @@
  * again it shows the bar and restores the layout that was active before going fullscreen.
  * https://dwm.suckless.org/patches/fullscreen/
  */
-#define FULLSCREEN_PATCH 0
+#define FULLSCREEN_PATCH 1
 
 /* This patch provides a keybinding to rotate all clients in the currently selected
  * area (master or stack) without affecting the other area.
@@ -585,7 +585,7 @@
  * https://github.com/mihirlad55/dwm-ipc
  * https://dwm.suckless.org/patches/ipc/
  */
-#define IPC_PATCH 0
+#define IPC_PATCH 1
 
 /* Adds rule option for clients to avoid accidental termination by killclient for sticky windows.
  * https://dwm.suckless.org/patches/ispermanent/
@@ -931,7 +931,7 @@
  *
  * https://dwm.suckless.org/patches/swallow/
  */
-#define SWALLOW_PATCH 1
+#define SWALLOW_PATCH 0
 
 /* This patch depends on the pertag patch and makes it possible to switch focus with a single
  * shortcut (MOD+s) instead of having to think if you should use mod-j or mod-k for reaching
@@ -1026,7 +1026,7 @@
 /* This patch allows you to toggle fullscreen on and off using a single shortcut key.
  * https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff
  */
-#define TOGGLEFULLSCREEN_PATCH 0
+#define TOGGLEFULLSCREEN_PATCH 1
 
 /* Lets you transfer the currently focused client between the master and stack area
  * while increasing or decreasing the master area (nmaster) accordingly.

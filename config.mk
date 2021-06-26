@@ -40,7 +40,7 @@ YAJLINC = -I/usr/include/yajl
 # XEXTLIB = -lXext
 
 # Uncomment this for the swallow patch / SWALLOW_PATCH
-XCBLIBS = -lX11-xcb -lxcb -lxcb-res
+# XCBLIBS = -lX11-xcb -lxcb -lxcb-res
 
 # includes and libs
 INCS = -I${X11INC} -I${FREETYPEINC} ${YAJLINC} ${PANGOINC}

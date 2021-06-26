@@ -786,6 +786,7 @@ applyrules(Client *c)
 	c->noswallow = -1;
 	#endif // SWALLOW_PATCH
 	c->isfloating = 0;
+	/* c->iscentered = 1; */
 	c->tags = 0;
 	XGetClassHint(dpy, c->win, &ch);
 	class    = ch.res_class ? ch.res_class : broken;
@@ -1244,6 +1245,11 @@ clientmessage(XEvent *e)
 			updatesizehints(c);
 			updatesystrayicongeom(c, wa.width, wa.height);
 			XAddToSaveSet(dpy, c->win);
+
+			/* alwayscenter patch */
+			c->x = c->mon->mx + (c->mon->mw - WIDTH(c)) / 2;
+			c->y = c->mon->my + (c->mon->mh - HEIGHT(c)) / 2;
+
 			XSelectInput(dpy, c->win, StructureNotifyMask | PropertyChangeMask | ResizeRedirectMask);
 			XClassHint ch = {"dwmsystray", "dwmsystray"};
 			XSetClassHint(dpy, c->win, &ch);
