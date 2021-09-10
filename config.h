@@ -410,6 +410,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "TOOLBAR", .isfloating = 1)
 	RULE(.wintype = WTYPE "SPLASH", .isfloating = 1)
 	RULE(.title = "notetaker_window", .isfloating = 1)
+	RULE(.title = "notetaker_window", .iscentered = 1)
 	/* RULE(.class = "Alacritty", .isfloating = 1) */
 	RULE(.class = "Gimp", .tags = 1 << 4)
 	RULE(.class = "Firefox", .tags = 1 << 1)
